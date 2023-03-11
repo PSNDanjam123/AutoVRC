@@ -27,6 +27,7 @@ namespace AutoVRC.Models
 
         [Header("Models")]
         public GameMaster GameMaster;
+        public CardGroup[] CardGroups;
 
         public void StartGame()
         {
