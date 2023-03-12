@@ -1238,6 +1238,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1468675957}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -1490,6 +1491,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1869895352}
 --- !u!114 &45952796
 MonoBehaviour:
@@ -1674,6 +1676,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1961717102}
 --- !u!114 &47477130
 MonoBehaviour:
@@ -2010,6 +2013,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1084316349}
 --- !u!114 &52089526
 MonoBehaviour:
@@ -2194,6 +2198,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 652666561}
 --- !u!114 &59124803
 MonoBehaviour:
@@ -2376,6 +2381,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1111093141}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -2763,6 +2769,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 420793490}
 --- !u!114 &77595056
 MonoBehaviour:
@@ -3197,6 +3204,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 740040479}
 --- !u!114 &98126723
 MonoBehaviour:
@@ -3379,6 +3387,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1034543902}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -3660,6 +3669,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 498286059}
 --- !u!114 &107883892
 MonoBehaviour:
@@ -3955,6 +3965,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 420793490}
 --- !u!114 &115258885
 MonoBehaviour:
@@ -4418,6 +4429,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1961717102}
 --- !u!114 &121344299
 MonoBehaviour:
@@ -4680,6 +4692,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 863224591}
 --- !u!114 &134495430
 MonoBehaviour:
@@ -5039,6 +5052,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 411029953}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -5344,6 +5358,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 879726022}
 --- !u!114 &151812532
 MonoBehaviour:
@@ -6045,6 +6060,7 @@ MonoBehaviour:
   LogMethods:
   - FixedUpdate
   Subscriptions: []
+  Bootstrapped: 0
   GameMaster: {fileID: 186434524}
   HandlingTick: 0
   RequestCooldown: 2
@@ -6140,6 +6156,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 420793490}
 --- !u!114 &168131214
 MonoBehaviour:
@@ -6435,6 +6452,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 879726022}
 --- !u!114 &174793434
 MonoBehaviour:
@@ -6925,6 +6943,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   VRCPlayerId: 0
   GameHosted: 0
   GameInProgress: 0
@@ -7394,6 +7413,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1455502835}
 --- !u!114 &201372677
 MonoBehaviour:
@@ -7578,6 +7598,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 812505295}
 --- !u!114 &202136881
 MonoBehaviour:
@@ -7836,6 +7857,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1390514463}
 --- !u!114 &203358629
 MonoBehaviour:
@@ -8188,6 +8210,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 879726022}
 --- !u!114 &208532732
 MonoBehaviour:
@@ -8323,6 +8346,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 27
   CardTemplateId: 3
   Damage: 1
@@ -8548,6 +8572,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardIds: 
   maxSize: 255
   Player: {fileID: 861411949}
@@ -8758,6 +8783,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1468675957}
 --- !u!114 &233084011
 MonoBehaviour:
@@ -10196,6 +10222,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1961717102}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -10533,6 +10560,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1869895352}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -10949,6 +10977,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 16
   CardTemplateId: 2
   Damage: 1
@@ -11089,6 +11118,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 304250739}
 --- !u!114 &311241614
 MonoBehaviour:
@@ -11916,6 +11946,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 498286059}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -12020,6 +12051,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1384163170}
 --- !u!114 &334476756
 MonoBehaviour:
@@ -12372,6 +12404,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1390514463}
 --- !u!114 &343445385
 MonoBehaviour:
@@ -12507,6 +12540,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 6
   CardTemplateId: 1
   Damage: 1
@@ -12741,6 +12775,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 304250739}
 --- !u!114 &349544818
 MonoBehaviour:
@@ -13278,6 +13313,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 648717069}
 --- !u!114 &374476584
 MonoBehaviour:
@@ -13687,6 +13723,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1084316349}
 --- !u!114 &385338653
 MonoBehaviour:
@@ -13884,6 +13921,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   GameMaster: {fileID: 186434524}
 --- !u!114 &385597323
 MonoBehaviour:
@@ -14446,6 +14484,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   GameMaster: {fileID: 186434524}
   CardStock: 
   CardTemplateManager: {fileID: 758401}
@@ -14772,6 +14811,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 304250739}
 --- !u!114 &408743983
 MonoBehaviour:
@@ -14907,6 +14947,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 19
   CardTemplateId: 3
   Damage: 1
@@ -15047,6 +15088,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1390514463}
 --- !u!114 &414347544
 MonoBehaviour:
@@ -15231,6 +15273,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2076784631}
 --- !u!114 &415644095
 MonoBehaviour:
@@ -15457,6 +15500,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 9
   CardTemplateId: 3
   Damage: 1
@@ -15597,6 +15641,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1869895352}
 --- !u!114 &421920512
 MonoBehaviour:
@@ -16123,6 +16168,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1384163170}
 --- !u!114 &438439008
 MonoBehaviour:
@@ -16479,6 +16525,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1996305445}
 --- !u!114 &439073041
 MonoBehaviour:
@@ -16970,6 +17017,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Player: {fileID: 861411949}
 --- !u!1 &455219120
 GameObject:
@@ -17324,6 +17372,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2076784631}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -17974,6 +18023,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 14
   CardTemplateId: 1
   Damage: 1
@@ -18418,6 +18468,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 411029953}
 --- !u!114 &511186386
 MonoBehaviour:
@@ -18848,6 +18899,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1869895352}
 --- !u!114 &518805031
 MonoBehaviour:
@@ -19279,6 +19331,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1111093141}
 --- !u!114 &525396364
 MonoBehaviour:
@@ -19749,6 +19802,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 863224591}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -20289,6 +20343,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 648717069}
 --- !u!114 &571454638
 MonoBehaviour:
@@ -21059,6 +21114,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2100823859}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -21241,6 +21297,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 879726022}
 --- !u!114 &597843250
 MonoBehaviour:
@@ -21655,6 +21712,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1996305445}
 --- !u!114 &608973135
 MonoBehaviour:
@@ -21908,6 +21966,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardIds: 
   maxSize: 255
   Player: {fileID: 861411949}
@@ -22153,6 +22212,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2024966373}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -22772,6 +22832,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 20
   CardTemplateId: 2
   Damage: 1
@@ -22863,6 +22924,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 23
   CardTemplateId: 3
   Damage: 1
@@ -23097,6 +23159,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 411029953}
 --- !u!114 &654937900
 MonoBehaviour:
@@ -23355,6 +23418,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Player: {fileID: 861411949}
 --- !u!1 &662453902
 GameObject:
@@ -23734,6 +23798,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1756997538}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -23838,6 +23903,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 740040479}
 --- !u!114 &679061472
 MonoBehaviour:
@@ -23973,6 +24039,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 4
   CardTemplateId: 2
   Damage: 1
@@ -24269,6 +24336,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1390514463}
 --- !u!114 &685011509
 MonoBehaviour:
@@ -24568,6 +24636,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1084316349}
 --- !u!114 &695542479
 MonoBehaviour:
@@ -24750,6 +24819,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 652666561}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -26164,6 +26234,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 12
   CardTemplateId: 1
   Damage: 1
@@ -27879,6 +27950,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   GameMaster: {fileID: 186434524}
   Player: {fileID: 861411949}
 --- !u!1 &804269131
@@ -28029,6 +28101,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 7
   CardTemplateId: 3
   Damage: 1
@@ -28943,6 +29016,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1111093141}
 --- !u!114 &849353650
 MonoBehaviour:
@@ -29226,6 +29300,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1084316349}
 --- !u!114 &853789674
 MonoBehaviour:
@@ -29549,6 +29624,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   VRCPlayerId: 0
   DisplayName: 
   VRCPlayerAttached: 0
@@ -29636,6 +29712,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 18
   CardTemplateId: 2
   Damage: 1
@@ -30010,6 +30087,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 17
   CardTemplateId: 3
   Damage: 1
@@ -30376,6 +30454,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 345936991}
 --- !u!114 &904803930
 MonoBehaviour:
@@ -30823,6 +30902,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 812505295}
 --- !u!114 &911923881
 MonoBehaviour:
@@ -31512,6 +31592,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 304250739}
 --- !u!114 &941730434
 MonoBehaviour:
@@ -31696,6 +31777,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2135543575}
 --- !u!114 &943720663
 MonoBehaviour:
@@ -31917,6 +31999,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1384163170}
 --- !u!114 &945845165
 MonoBehaviour:
@@ -32816,6 +32899,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1468675957}
 --- !u!114 &968666108
 MonoBehaviour:
@@ -33000,6 +33084,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1399301326}
 --- !u!114 &973051134
 MonoBehaviour:
@@ -33924,6 +34009,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1455502835}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -34065,6 +34151,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1034543902}
 --- !u!114 &1010938394
 MonoBehaviour:
@@ -34581,6 +34668,206 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Root: {fileID: 990354867}
+  Listeners:
+  - {fileID: 1452105742}
+  - {fileID: 654937899}
+  - {fileID: 525396363}
+  - {fileID: 1530877554}
+  - {fileID: 1533106682}
+  - {fileID: 1950261109}
+  - {fileID: 134495429}
+  - {fileID: 945845164}
+  - {fileID: 1632141507}
+  - {fileID: 1010938393}
+  - {fileID: 421920511}
+  - {fileID: 597843249}
+  - {fileID: 1172850371}
+  - {fileID: 1551908366}
+  - {fileID: 1625568778}
+  - {fileID: 2100098756}
+  - {fileID: 2085369329}
+  - {fileID: 1287433356}
+  - {fileID: 115258884}
+  - {fileID: 1280015352}
+  - {fileID: 47477129}
+  - {fileID: 1193234081}
+  - {fileID: 203358628}
+  - {fileID: 415644094}
+  - {fileID: 385338652}
+  - {fileID: 608973134}
+  - {fileID: 2060049066}
+  - {fileID: 349544817}
+  - {fileID: 98126722}
+  - {fileID: 1477028159}
+  - {fileID: 594627535}
+  - {fileID: 35499120}
+  - {fileID: 100480320}
+  - {fileID: 1005607396}
+  - {fileID: 1619005407}
+  - {fileID: 1800963118}
+  - {fileID: 1430923642}
+  - {fileID: 1814196300}
+  - {fileID: 1095040726}
+  - {fileID: 1503932098}
+  - {fileID: 59894220}
+  - {fileID: 272712963}
+  - {fileID: 1107384355}
+  - {fileID: 676040671}
+  - {fileID: 332386481}
+  - {fileID: 634694636}
+  - {fileID: 1508003081}
+  - {fileID: 1763660907}
+  - {fileID: 551489675}
+  - {fileID: 140273759}
+  - {fileID: 1178681578}
+  - {fileID: 1638488976}
+  - {fileID: 284981098}
+  - {fileID: 698174886}
+  - {fileID: 1941490508}
+  - {fileID: 2089058384}
+  - {fileID: 463317678}
+  - {fileID: 1820045358}
+  - {fileID: 1494620272}
+  - {fileID: 1885886034}
+  - {fileID: 1905852704}
+  - {fileID: 166830937}
+  - {fileID: 803897901}
+  - {fileID: 1697187184}
+  - {fileID: 1619327076}
+  - {fileID: 662381121}
+  - {fileID: 77595055}
+  - {fileID: 1902855990}
+  - {fileID: 904803929}
+  - {fileID: 1039816725}
+  - {fileID: 1743836423}
+  - {fileID: 233084010}
+  - {fileID: 408743982}
+  - {fileID: 685011508}
+  - {fileID: 518805030}
+  - {fileID: 208532731}
+  - {fileID: 334476755}
+  - {fileID: 2057592019}
+  - {fileID: 2135155708}
+  - {fileID: 1556834914}
+  - {fileID: 1371833647}
+  - {fileID: 1444146899}
+  - {fileID: 1163026827}
+  - {fileID: 1666071687}
+  - {fileID: 52089525}
+  - {fileID: 1772581201}
+  - {fileID: 1585924940}
+  - {fileID: 2009138158}
+  - {fileID: 121344298}
+  - {fileID: 2075595025}
+  - {fileID: 1500916580}
+  - {fileID: 511186385}
+  - {fileID: 2070765420}
+  - {fileID: 911923880}
+  - {fileID: 439073040}
+  - {fileID: 1791236847}
+  - {fileID: 849353649}
+  - {fileID: 1024313449}
+  - {fileID: 1810394260}
+  - {fileID: 1044380091}
+  - {fileID: 943720662}
+  - {fileID: 59124802}
+  - {fileID: 1236515317}
+  - {fileID: 45952795}
+  - {fileID: 1670754462}
+  - {fileID: 1752081010}
+  - {fileID: 1856928559}
+  - {fileID: 1402357879}
+  - {fileID: 1864929744}
+  - {fileID: 1563282938}
+  - {fileID: 571454637}
+  - {fileID: 1767270796}
+  - {fileID: 1969375794}
+  - {fileID: 2118511720}
+  - {fileID: 1667741524}
+  - {fileID: 1295671812}
+  - {fileID: 1597583998}
+  - {fileID: 853789673}
+  - {fileID: 414347543}
+  - {fileID: 1883574579}
+  - {fileID: 1440381937}
+  - {fileID: 1144210539}
+  - {fileID: 1038215339}
+  - {fileID: 151812531}
+  - {fileID: 311241613}
+  - {fileID: 1236274088}
+  - {fileID: 385597322}
+  - {fileID: 450963977}
+  - {fileID: 1909664430}
+  - {fileID: 1444585816}
+  - {fileID: 2035429097}
+  - {fileID: 168131213}
+  - {fileID: 1432355696}
+  - {fileID: 201372676}
+  - {fileID: 374476583}
+  - {fileID: 1404791198}
+  - {fileID: 1113444432}
+  - {fileID: 1556851658}
+  - {fileID: 1687230343}
+  - {fileID: 695542478}
+  - {fileID: 679061471}
+  - {fileID: 968666107}
+  - {fileID: 1299104033}
+  - {fileID: 438439007}
+  - {fileID: 1595489977}
+  - {fileID: 941730433}
+  - {fileID: 1479664958}
+  - {fileID: 1038827069}
+  - {fileID: 1097877837}
+  - {fileID: 343445384}
+  - {fileID: 973051133}
+  - {fileID: 107883891}
+  - {fileID: 202136880}
+  - {fileID: 1206980975}
+  - {fileID: 174793433}
+  - {fileID: 2091539821}
+  - {fileID: 1670500499}
+  - {fileID: 1404758175}
+  - {fileID: 1643019642}
+  - {fileID: 1343441945}
+  - {fileID: 1053567568}
+  Models:
+  - {fileID: 186434524}
+  - {fileID: 879726022}
+  - {fileID: 863224591}
+  - {fileID: 411029953}
+  - {fileID: 648717069}
+  - {fileID: 1384163170}
+  - {fileID: 1869895352}
+  - {fileID: 304250739}
+  - {fileID: 652666561}
+  - {fileID: 1996305445}
+  - {fileID: 2076784631}
+  - {fileID: 211237179}
+  - {fileID: 2135543575}
+  - {fileID: 1377801970}
+  - {fileID: 215503984}
+  - {fileID: 1399301326}
+  - {fileID: 2024966373}
+  - {fileID: 498286059}
+  - {fileID: 1756997538}
+  - {fileID: 395793516}
+  - {fileID: 861411949}
+  - {fileID: 2100823859}
+  - {fileID: 1468675957}
+  - {fileID: 1034543902}
+  - {fileID: 1455502835}
+  - {fileID: 679720648}
+  - {fileID: 1390514463}
+  - {fileID: 345936991}
+  - {fileID: 812505295}
+  - {fileID: 1084316349}
+  - {fileID: 420793490}
+  - {fileID: 1111093141}
+  - {fileID: 1961717102}
+  - {fileID: 740040479}
+  - {fileID: 1686104227}
+  - {fileID: 617645511}
+  Limiter: 100
 --- !u!1 &1018495256
 GameObject:
   m_ObjectHideFlags: 0
@@ -34829,6 +35116,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1377801970}
 --- !u!114 &1024313450
 MonoBehaviour:
@@ -35129,6 +35417,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 2
   CardTemplateId: 3
   Damage: 1
@@ -35343,6 +35632,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2024966373}
 --- !u!114 &1038215340
 MonoBehaviour:
@@ -35527,6 +35817,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2024966373}
 --- !u!114 &1038827070
 MonoBehaviour:
@@ -35711,6 +36002,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2024966373}
 --- !u!114 &1039816726
 MonoBehaviour:
@@ -35973,6 +36265,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1384163170}
 --- !u!114 &1044380092
 MonoBehaviour:
@@ -36530,6 +36823,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   GameMaster: {fileID: 186434524}
   Player: {fileID: 861411949}
 --- !u!1 &1054203409
@@ -37346,6 +37640,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 8
   CardTemplateId: 1
   Damage: 1
@@ -38112,6 +38407,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1084316349}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -38216,6 +38512,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1869895352}
 --- !u!114 &1097877838
 MonoBehaviour:
@@ -38706,6 +39003,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 740040479}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -38986,6 +39284,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 10
   CardTemplateId: 2
   Damage: 1
@@ -39163,6 +39462,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1961717102}
 --- !u!114 &1113444433
 MonoBehaviour:
@@ -39950,6 +40250,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 812505295}
 --- !u!114 &1144210540
 MonoBehaviour:
@@ -40393,6 +40694,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 498286059}
 --- !u!114 &1163026828
 MonoBehaviour:
@@ -40803,6 +41105,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 652666561}
 --- !u!114 &1172850372
 MonoBehaviour:
@@ -41096,6 +41399,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 648717069}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -41356,6 +41660,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 211237179}
 --- !u!114 &1193234082
 MonoBehaviour:
@@ -41730,6 +42035,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1996305445}
 --- !u!114 &1206980976
 MonoBehaviour:
@@ -42370,6 +42676,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 345936991}
 --- !u!114 &1236274089
 MonoBehaviour:
@@ -42554,6 +42861,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1399301326}
 --- !u!114 &1236515318
 MonoBehaviour:
@@ -44715,6 +45023,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2135543575}
 --- !u!114 &1280015353
 MonoBehaviour:
@@ -44977,6 +45286,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1377801970}
 --- !u!114 &1287433357
 MonoBehaviour:
@@ -45329,6 +45639,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 740040479}
 --- !u!114 &1295671813
 MonoBehaviour:
@@ -45644,6 +45955,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2076784631}
 --- !u!114 &1299104034
 MonoBehaviour:
@@ -46472,6 +46784,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Player: {fileID: 861411949}
   DisplayName: 
 --- !u!1 &1347169148
@@ -47325,6 +47638,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 648717069}
 --- !u!114 &1371833648
 MonoBehaviour:
@@ -47666,6 +47980,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 29
   CardTemplateId: 3
   Damage: 1
@@ -47905,6 +48220,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 21
   CardTemplateId: 2
   Damage: 1
@@ -48164,6 +48480,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 5
   CardTemplateId: 2
   Damage: 1
@@ -48868,6 +49185,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 24
   CardTemplateId: 1
   Damage: 1
@@ -49107,6 +49425,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1468675957}
 --- !u!114 &1402357880
 MonoBehaviour:
@@ -49382,6 +49701,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2100823859}
 --- !u!1 &1404791195
 GameObject:
@@ -49475,6 +49795,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 679720648}
 --- !u!114 &1404791199
 MonoBehaviour:
@@ -50314,6 +50635,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 345936991}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -50418,6 +50740,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2135543575}
 --- !u!114 &1432355697
 MonoBehaviour:
@@ -50676,6 +50999,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 498286059}
 --- !u!114 &1440381938
 MonoBehaviour:
@@ -50860,6 +51184,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1455502835}
 --- !u!114 &1444146900
 MonoBehaviour:
@@ -51044,6 +51369,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1377801970}
 --- !u!114 &1444585817
 MonoBehaviour:
@@ -51408,6 +51734,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 498286059}
 --- !u!114 &1452105743
 MonoBehaviour:
@@ -51617,6 +51944,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 3
   CardTemplateId: 1
   Damage: 1
@@ -52136,6 +52464,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 1
   CardTemplateId: 2
   Damage: 1
@@ -52522,6 +52851,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 345936991}
 --- !u!114 &1477028160
 MonoBehaviour:
@@ -52780,6 +53110,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 345936991}
 --- !u!114 &1479664959
 MonoBehaviour:
@@ -53286,6 +53617,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2135543575}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -53390,6 +53722,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2076784631}
 --- !u!114 &1500916581
 MonoBehaviour:
@@ -53646,6 +53979,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 420793490}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -53748,6 +54082,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 304250739}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -54335,6 +54670,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2024966373}
 --- !u!114 &1530877555
 MonoBehaviour:
@@ -54556,6 +54892,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 648717069}
 --- !u!114 &1533106683
 MonoBehaviour:
@@ -55241,6 +55578,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1468675957}
 --- !u!114 &1551908367
 MonoBehaviour:
@@ -55519,6 +55857,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 863224591}
 --- !u!114 &1556834915
 MonoBehaviour:
@@ -55703,6 +56042,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 211237179}
 --- !u!114 &1556851659
 MonoBehaviour:
@@ -56015,6 +56355,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2100823859}
 --- !u!1 &1565821492
 GameObject:
@@ -56581,6 +56922,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2135543575}
 --- !u!114 &1585924941
 MonoBehaviour:
@@ -56796,6 +57138,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1034543902}
 --- !u!114 &1595489978
 MonoBehaviour:
@@ -57017,6 +57360,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 863224591}
 --- !u!114 &1597583999
 MonoBehaviour:
@@ -57648,6 +57992,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 679720648}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -57843,6 +58188,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Player: {fileID: 861411949}
 --- !u!1 &1619771286
 GameObject:
@@ -58051,6 +58397,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 679720648}
 --- !u!114 &1625568779
 MonoBehaviour:
@@ -58272,6 +58619,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 812505295}
 --- !u!114 &1632141508
 MonoBehaviour:
@@ -58532,6 +58880,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1384163170}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -58842,6 +59191,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Player: {fileID: 861411949}
 --- !u!1 &1656492246
 GameObject:
@@ -59046,6 +59396,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1399301326}
 --- !u!114 &1666071688
 MonoBehaviour:
@@ -59230,6 +59581,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 411029953}
 --- !u!114 &1667741525
 MonoBehaviour:
@@ -59414,6 +59766,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 411029953}
 --- !u!114 &1670500500
 MonoBehaviour:
@@ -59598,6 +59951,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1034543902}
 --- !u!114 &1670754463
 MonoBehaviour:
@@ -59909,6 +60263,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardIds: 
   maxSize: 255
   Player: {fileID: 861411949}
@@ -60004,6 +60359,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 863224591}
 --- !u!114 &1687230344
 MonoBehaviour:
@@ -60468,6 +60824,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   GameMaster: {fileID: 186434524}
   Player: {fileID: 861411949}
 --- !u!1 &1703668124
@@ -61701,6 +62058,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 652666561}
 --- !u!114 &1743836424
 MonoBehaviour:
@@ -62062,6 +62420,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1996305445}
 --- !u!114 &1752081011
 MonoBehaviour:
@@ -62234,6 +62593,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 13
   CardTemplateId: 3
   Damage: 1
@@ -62709,6 +63069,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 879726022}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -62813,6 +63174,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 679720648}
 --- !u!114 &1767270797
 MonoBehaviour:
@@ -63149,6 +63511,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1111093141}
 --- !u!114 &1772581202
 MonoBehaviour:
@@ -63522,6 +63885,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1377801970}
 --- !u!114 &1791236848
 MonoBehaviour:
@@ -64008,6 +64372,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1390514463}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -64260,6 +64625,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1455502835}
 --- !u!114 &1810394261
 MonoBehaviour:
@@ -64745,6 +65111,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 812505295}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -64847,6 +65214,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 211237179}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -66022,6 +66390,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 211237179}
 --- !u!114 &1856928560
 MonoBehaviour:
@@ -66354,6 +66723,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2076784631}
 --- !u!114 &1864929745
 MonoBehaviour:
@@ -66658,6 +67028,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 22
   CardTemplateId: 1
   Damage: 1
@@ -67007,6 +67378,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1756997538}
 --- !u!114 &1883574580
 MonoBehaviour:
@@ -67281,6 +67653,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1377801970}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -67632,6 +68005,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2100823859}
 --- !u!1 &1905852701
 GameObject:
@@ -67718,6 +68092,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   GameMaster: {fileID: 186434524}
 --- !u!1 &1909664427
 GameObject:
@@ -67811,6 +68186,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 652666561}
 --- !u!114 &1909664431
 MonoBehaviour:
@@ -69107,6 +69483,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1399301326}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -69629,6 +70006,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1455502835}
 --- !u!114 &1950261110
 MonoBehaviour:
@@ -70159,6 +70537,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 11
   CardTemplateId: 2
   Damage: 1
@@ -70410,6 +70789,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1961717102}
 --- !u!114 &1969375795
 MonoBehaviour:
@@ -70767,6 +71147,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 25
   CardTemplateId: 1
   Damage: 1
@@ -70944,6 +71325,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 211237179}
 --- !u!114 &2009138159
 MonoBehaviour:
@@ -71423,6 +71805,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 15
   CardTemplateId: 1
   Damage: 1
@@ -71809,6 +72192,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1111093141}
 --- !u!114 &2035429098
 MonoBehaviour:
@@ -72506,6 +72890,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1034543902}
 --- !u!114 &2057592020
 MonoBehaviour:
@@ -72781,6 +73166,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 2100823859}
 --- !u!1 &2070765417
 GameObject:
@@ -72874,6 +73260,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1756997538}
 --- !u!114 &2070765421
 MonoBehaviour:
@@ -73058,6 +73445,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 740040479}
 --- !u!114 &2075595026
 MonoBehaviour:
@@ -73271,6 +73659,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 26
   CardTemplateId: 2
   Damage: 1
@@ -73448,6 +73837,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1399301326}
 --- !u!114 &2085369330
 MonoBehaviour:
@@ -73837,6 +74227,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1996305445}
   CardTemplateManager: {fileID: 758401}
   CardTemplateId: 0
@@ -74019,6 +74410,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1756997538}
 --- !u!114 &2091539822
 MonoBehaviour:
@@ -74281,6 +74673,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 1756997538}
 --- !u!114 &2100098757
 MonoBehaviour:
@@ -74456,6 +74849,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 0
   CardTemplateId: 2
   Damage: 1
@@ -74985,6 +75379,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 420793490}
 --- !u!114 &2118511721
 MonoBehaviour:
@@ -75403,6 +75798,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscriptions: []
+  Bootstrapped: 0
   Card: {fileID: 679720648}
 --- !u!114 &2135155709
 MonoBehaviour:
@@ -75538,6 +75934,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
+  Bootstrapped: 0
   CardId: 28
   CardTemplateId: 2
   Damage: 1
