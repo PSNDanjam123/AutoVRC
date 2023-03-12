@@ -12,6 +12,9 @@ namespace AutoVRC.Models
 {
     public class Shop : Model
     {
+        [Header("Relationships")]
+        public GameMaster GameMaster;
+
         [UdonSynced]
         public byte[] CardStock;
 
