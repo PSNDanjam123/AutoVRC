@@ -16,7 +16,7 @@ namespace AutoVRC.Listeners
 
         public bool HandlingTick = false;
 
-        public float RequestCooldown = 2.0f;
+        public float RequestCooldown = 0.1f;
 
         private float lastFixedUpdate = 0;
 
@@ -37,7 +37,6 @@ namespace AutoVRC.Listeners
             {
                 return; // Not enough time has passed to handle a game tick
             }
-            Log("FixedUpdate", "Handling Tick!");
             GameMasterController.HandleTick(GameMaster, this);
             lastFixedUpdate = 0;
         }

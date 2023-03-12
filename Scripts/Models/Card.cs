@@ -71,40 +71,46 @@ namespace AutoVRC.Models
         {
             SetOwner();
             var prev = GetCardGroup();
-            prev.SetOwner();
             if (prev != null)
             {
+                prev.SetOwner();
                 prev.Remove(CardId);
                 prev.Sync();
             }
             Hand.Add(CardId);
-            prev.Sync();
             Hand.Sync();
         }
         public void AddToField()
         {
             SetOwner();
             var prev = GetCardGroup();
-            prev.SetOwner();
             if (prev != null)
             {
+                prev.SetOwner();
                 prev.Remove(CardId);
+                prev.Sync();
             }
             Field.Add(CardId);
-            prev.Sync();
             Field.Sync();
         }
         public void AddToShop()
         {
             Shop.SetOwner();
             var prev = GetCardGroup();
-            prev.SetOwner();
             if (prev != null)
             {
+                prev.SetOwner();
                 prev.Remove(CardId);
+                prev.Sync();
             }
             Shop.Add(CardId);
-            prev.Sync();
+            Shop.Sync();
+        }
+
+        public void RemoveFromShop()
+        {
+            Shop.SetOwner();
+            Shop.Remove(CardId);
             Shop.Sync();
         }
 

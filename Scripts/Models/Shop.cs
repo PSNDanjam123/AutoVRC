@@ -22,6 +22,28 @@ namespace AutoVRC.Models
 
         public byte CardMultiplier = 12;
 
+        public CardTemplate PluckRandom()
+        {
+            if (CardStock.Length == 0)
+            {
+                return null;
+            }
+            var x = Random.Range(0, CardStock.Length - 1);
+            var data = new byte[CardStock.Length - 1];
+            byte plucked = 0;
+            for (var i = 0; i < CardStock.Length - 1; i++)
+            {
+                if (i == x)
+                {
+                    plucked = CardStock[i];
+                    continue;
+                }
+                data[i] = CardStock[i];
+            }
+            CardStock = data;
+            return CardTemplateManager.GetTemplate(plucked);
+        }
+
         public void Restock()
         {
             var templates = CardTemplateManager.CardTemplates;

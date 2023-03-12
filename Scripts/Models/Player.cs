@@ -24,13 +24,19 @@ namespace AutoVRC.Models
         public byte Rank = 1;
         [UdonSynced, Range(0, 99)]
         public byte Coins = 3;
+        [UdonSynced]
+        public bool WaitingOnShopRefresh = false;
 
         [Header("Models")]
         public GameMaster GameMaster;
         public CardGroup[] CardGroups;
-
+        public Card[] Cards;
         public void StartGame()
         {
+            GameMaster.Shop.SetOwner();
+            GameMaster.Shop.Restock();
+            GameMaster.Shop.Sync();
+
             GameMaster.SetOwner();
             GameMaster.GameInProgress = true;
             GameMaster.Sync();
@@ -132,6 +138,31 @@ namespace AutoVRC.Models
                 return false;
             }
             return true;
+        }
+
+        public void RemoveCardsFromShop()
+        {
+            foreach (var card in Cards)
+            {
+                if (card.InShop())
+                {
+                    card.Shop.SetOwner();
+                    card.Shop.Remove(card.CardId);
+                    card.Shop.Sync();
+                }
+            }
+        }
+
+        public Card GetCardWithoutGroup()
+        {
+            foreach (var card in Cards)
+            {
+                if (!card.InField() && !card.InShop() && !card.InHand())
+                {
+                    return card;
+                }
+            }
+            return null;
         }
     }
 

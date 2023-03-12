@@ -12,6 +12,16 @@ namespace AutoVRC.Controllers
 
     public class ConstructionController : Controller
     {
+        public static void RefreshShop(Player Player, VRCPlayerApi vRCPlayerApi)
+        {
+            if (Player.VRCPlayerId != vRCPlayerApi.playerId)
+            {
+                return;
+            }
+            Player.SetOwner();
+            Player.WaitingOnShopRefresh = true;
+            Player.Sync();
+        }
         public static void PlayCard(Card Card, VRCPlayerApi vRCPlayerApi)
         {
             if (Card.Player.VRCPlayerId != vRCPlayerApi.playerId)

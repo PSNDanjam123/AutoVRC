@@ -2623,6 +2623,7 @@ MonoBehaviour:
   GameInProgress: 0
   Players:
   - {fileID: 861411949}
+  Shop: {fileID: 395793516}
 --- !u!114 &186434525
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3477,7 +3478,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
-  CardIds: 000102
+  CardIds: 
   maxSize: 255
   Player: {fileID: 861411949}
 --- !u!1 &221495862
@@ -6137,6 +6138,8 @@ GameObject:
   - component: {fileID: 450963975}
   - component: {fileID: 450963974}
   - component: {fileID: 450963973}
+  - component: {fileID: 450963977}
+  - component: {fileID: 450963976}
   m_Layer: 0
   m_Name: RefreshShop
   m_TagString: Untagged
@@ -6208,7 +6211,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 450963974}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 450963976}
+        m_MethodName: Interact
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &450963974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6246,6 +6260,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450963971}
   m_CullTransparentMesh: 0
+--- !u!114 &450963976
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450963971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 1
+  serializedProgramAsset: {fileID: 11400000, guid: 361c66583d541d74083a3d9f486de44a,
+    type: 2}
+  programSource: {fileID: 11400000, guid: fe64d9baaaa61c446aea776ea0d138ce, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0
+--- !u!114 &450963977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450963971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6730205b59c0242a4fda5e4222e285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _udonSharpBackingUdonBehaviour: {fileID: 450963976}
+  LogEnabled: 0
+  LogMethods: []
+  Subscriptions: []
+  Player: {fileID: 861411949}
 --- !u!1 &460931010
 GameObject:
   m_ObjectHideFlags: 0
@@ -7820,7 +7886,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
-  CardIds: 0809
+  CardIds: 
   maxSize: 255
   Player: {fileID: 861411949}
 --- !u!1 &626488594
@@ -10994,11 +11060,23 @@ MonoBehaviour:
   Health: 30
   Rank: 1
   Coins: 3
+  WaitingOnShopRefresh: 0
   GameMaster: {fileID: 186434524}
   CardGroups:
   - {fileID: 215503984}
   - {fileID: 1686104227}
   - {fileID: 617645511}
+  Cards:
+  - {fileID: 2100823859}
+  - {fileID: 1468675957}
+  - {fileID: 1034543902}
+  - {fileID: 1455502835}
+  - {fileID: 679720648}
+  - {fileID: 1390514463}
+  - {fileID: 345936991}
+  - {fileID: 812505295}
+  - {fileID: 1084316349}
+  - {fileID: 420793490}
 --- !u!1 &873566527
 GameObject:
   m_ObjectHideFlags: 0
@@ -23325,7 +23403,7 @@ MonoBehaviour:
   LogEnabled: 0
   LogMethods: []
   Subscribers: []
-  CardIds: 0304050607
+  CardIds: 
   maxSize: 255
   Player: {fileID: 861411949}
 --- !u!1 &1691395761

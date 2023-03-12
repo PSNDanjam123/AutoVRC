@@ -20,6 +20,7 @@ namespace AutoVRC.Models
 
         [Header("Models")]
         public Player[] Players;
+        public Shop Shop;
 
         public uint PlayersJoinedCount()
         {
