@@ -15,20 +15,19 @@ namespace AutoVRC.Listeners
     {
         [Header("Models")]
         public Card Card;
-        private int test = 0;
         public override void Interact()
         {
             if (Card.InHand())
             {
-                ConstructionController.PlayCard(Card);
+                ConstructionController.PlayCard(Card, Networking.LocalPlayer);
             }
             else if (Card.InField())
             {
-                ConstructionController.SellCard(Card);
+                ConstructionController.SellCard(Card, Networking.LocalPlayer);
             }
             else if (Card.InShop())
             {
-                ConstructionController.BuyCard(Card);
+                ConstructionController.BuyCard(Card, Networking.LocalPlayer);
             }
         }
     }

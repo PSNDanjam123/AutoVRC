@@ -66,7 +66,8 @@ namespace AutoVRC.Listeners
         private bool toggleVisibility()
         {
             if (!Card.Player.GameMaster.GameInProgress
-                || !Card.InCardGroup())
+                || !Card.InCardGroup()
+                || !Card.Player.InGame)
             {
                 gameObject.SetActive(false);
                 return false;
