@@ -35,6 +35,16 @@ namespace AutoVRC.Models
             Health = template.Health;
         }
 
+        public int GetCardGroupPosition()
+        {
+            var group = GetCardGroup();
+            if (!group)
+            {
+                return -1;
+            }
+            return group.GetPosition(CardId);
+        }
+
         public CardGroup GetCardGroup()
         {
             if (InHand())

@@ -41,13 +41,14 @@ namespace AutoVRC.Listeners
 
         void FixedUpdate()
         {
-            var animationSpeed = 0.2f;
+            var animationSpeed = 0.1f;
             if (transform.position != targetPosition)
             {
                 var dist = Vector3.Distance(transform.position, targetPosition);
-                if (dist < 0.002f)
+                if (dist < 0.01f)
                 {
                     transform.position = targetPosition;
+                    Card.OnSync();
                 }
                 transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime / animationSpeed);
             }
@@ -115,7 +116,7 @@ namespace AutoVRC.Listeners
             var trans = getCardGroupTransform();
             var count = cardGroup.GetCount();
             var width = Mesh.GetComponentInChildren<MeshRenderer>().bounds.size.x;
-            var margin = width * 0.2f;
+            var margin = width * 0.3f;
             var length = width * count;
             var index = cardGroup.GetPosition(Card.CardId);
             var position = trans.position;

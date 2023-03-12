@@ -44,14 +44,6 @@ namespace AutoVRC.Controllers
             }
             Card.MoveLeft();
         }
-        public static void MoveRight(Card Card, VRCPlayerApi vRCPlayerApi)
-        {
-            if (Card.Player.VRCPlayerId != vRCPlayerApi.playerId)
-            {
-                return;
-            }
-            Card.MoveRight();
-        }
     }
 
 }
