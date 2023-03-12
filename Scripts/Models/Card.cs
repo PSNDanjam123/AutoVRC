@@ -69,6 +69,10 @@ namespace AutoVRC.Models
 
         public void AddToHand()
         {
+            if (Hand.GetCount() > 9)
+            {
+                return;
+            }
             SetOwner();
             var prev = GetCardGroup();
             if (prev != null)
@@ -82,6 +86,10 @@ namespace AutoVRC.Models
         }
         public void AddToField()
         {
+            if (Field.GetCount() > 9)
+            {
+                return;
+            }
             SetOwner();
             var prev = GetCardGroup();
             if (prev != null)
@@ -95,6 +103,10 @@ namespace AutoVRC.Models
         }
         public void AddToShop()
         {
+            if (Shop.GetCount() > 9)
+            {
+                return;
+            }
             Shop.SetOwner();
             var prev = GetCardGroup();
             if (prev != null)

@@ -31,7 +31,7 @@ namespace AutoVRC.Listeners.Card
 
         public override void OnModelSync()
         {
-            gameObject.SetActive(!Card.Player.WaitingOnShopRefresh && Card.InShop());
+            gameObject.SetActive(!Card.Player.WaitingOnShopRefresh && Card.InShop() && Card.Hand.GetCount() < 10);
         }
 
     }
