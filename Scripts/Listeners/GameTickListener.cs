@@ -14,8 +14,6 @@ namespace AutoVRC.Listeners
         [Header("Models")]
         public Models.GameMaster GameMaster;
 
-        public bool Owner = false;
-
         public bool HandlingTick = false;
 
         public float RequestCooldown = 2.0f;
@@ -27,16 +25,12 @@ namespace AutoVRC.Listeners
             Subscribe(GameMaster);
         }
 
-        public override void OnModelSync()
-        {
-            GameMasterController.ToggleGameTickListener(GameMaster, this);
-        }
-
         void FixedUpdate()
         {
-            if (!Owner)
+            if (!GameMaster.GameInProgress
+                || !GameMaster.IsOwner())
             {
-                return; // Only the owner (GameMaster) can handle game ticks
+                return; // Only the owner of GameMaster can handle game ticks, game ticks only run while game is in progress
             }
             lastFixedUpdate += Time.deltaTime;
             if (lastFixedUpdate < RequestCooldown)
