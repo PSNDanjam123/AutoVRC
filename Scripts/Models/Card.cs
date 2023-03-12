@@ -75,7 +75,7 @@ namespace AutoVRC.Models
         }
         public void AddToShop()
         {
-            SetOwner();
+            Shop.SetOwner();
             var prev = GetCardGroup();
             prev.SetOwner();
             if (prev != null)
@@ -85,6 +85,21 @@ namespace AutoVRC.Models
             Shop.Add(CardId);
             prev.Sync();
             Shop.Sync();
+        }
+
+        public void MoveLeft()
+        {
+            var group = GetCardGroup();
+            group.SetOwner();
+            group.MoveLeft(CardId);
+            group.Sync();
+        }
+        public void MoveRight()
+        {
+            var group = GetCardGroup();
+            group.SetOwner();
+            group.MoveRight(CardId);
+            group.Sync();
         }
 
         public bool InHand()
