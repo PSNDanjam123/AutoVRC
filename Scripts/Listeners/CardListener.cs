@@ -8,6 +8,7 @@ using UnityEngine.UI;
 using AutoVRC.Framework;
 using AutoVRC.Models;
 using AutoVRC.Controllers;
+using AutoVRC.Tools;
 
 namespace AutoVRC.Listeners
 {
@@ -16,6 +17,10 @@ namespace AutoVRC.Listeners
         [Header("Models")]
         public Models.Card Card;
 
+        public CardTemplateManager CardTemplateManager;
+
+        public byte CardTemplateId = 0;
+        public CardTemplate CardTemplate = null;
         public Text Rank;
         public Text Title;
         public Text Damage;
@@ -27,6 +32,11 @@ namespace AutoVRC.Listeners
         public GameObject Mesh;
 
         private Vector3 targetPosition = Vector3.zero;
+
+        void Start()
+        {
+            updateDisplay();
+        }
 
         void FixedUpdate()
         {
@@ -78,10 +88,20 @@ namespace AutoVRC.Listeners
 
         private void updateValues()
         {
-            Rank.text = "1";
-            Title.text = "Todo";
+            if (CardTemplateId != Card.CardTemplateId)
+            {
+                updateDisplay();
+            }
             Damage.text = Card.Damage.ToString();
             Health.text = Card.Health.ToString();
+        }
+
+        private void updateDisplay()
+        {
+            CardTemplate = CardTemplateManager.GetTemplate(Card.CardTemplateId);
+            Rank.text = CardTemplate.Rank.ToString();
+            Title.text = CardTemplate.Title.ToString();
+            Mesh.transform.Find("Front").GetComponent<MeshRenderer>().material.SetTexture("_MainTex", CardTemplate.Art);
         }
 
         private void updatePosition()

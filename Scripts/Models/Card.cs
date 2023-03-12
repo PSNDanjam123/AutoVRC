@@ -14,6 +14,9 @@ namespace AutoVRC.Models
         public byte CardId;   // unique, used for group assigning
 
         [UdonSynced]
+        public byte CardTemplateId;   // used to find the card template with default stats and info 
+
+        [UdonSynced]
         public byte Damage = 1;
         [UdonSynced]
         public byte Health = 1;
@@ -23,6 +26,13 @@ namespace AutoVRC.Models
         public CardGroup Hand;
         public CardGroup Field;
         public CardGroup Shop;
+
+        public void LoadTemplate(CardTemplate template)
+        {
+            CardTemplateId = template.CardTemplateId;
+            Damage = template.Damage;
+            Health = template.Health;
+        }
 
         public CardGroup GetCardGroup()
         {
