@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
-  m_Name: DemoListener
+  m_Name: BuyListener
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: b4a634b2e54e18f46b4166ac52044341,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 58f901ea742d8b144a49284941ff5371,
     type: 2}
   udonAssembly: 
   assemblyError: 
-  sourceCsScript: {fileID: 11500000, guid: bd05ce353e503f742b7f792605106dd3, type: 3}
+  sourceCsScript: {fileID: 11500000, guid: b28cade541edf934abff8510585b0e5b, type: 3}
   scriptVersion: 2
   compiledVersion: 2
   behaviourSyncMode: 1
   hasInteractEvent: 1
-  scriptID: -6657799546901742050
+  scriptID: 8922083325649156703
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 

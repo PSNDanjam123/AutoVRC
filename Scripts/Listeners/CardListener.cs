@@ -115,7 +115,7 @@ namespace AutoVRC.Listeners
             var trans = getCardGroupTransform();
             var count = cardGroup.GetCount();
             var width = Mesh.GetComponentInChildren<MeshRenderer>().bounds.size.x;
-            var margin = width * 0.1f;
+            var margin = width * 0.2f;
             var length = width * count;
             var index = cardGroup.GetPosition(Card.CardId);
             var position = trans.position;
