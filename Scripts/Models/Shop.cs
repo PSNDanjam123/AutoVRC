@@ -13,7 +13,7 @@ namespace AutoVRC.Models
     public class Shop : Model
     {
         [UdonSynced]
-        public CardTemplate[] CardStock;
+        public byte[] CardStock;
 
         public CardTemplateManager CardTemplateManager;
 
@@ -25,14 +25,14 @@ namespace AutoVRC.Models
             var totalTemplates = templates.Length;
             var totalCards = CardMultiplier * totalTemplates;
 
-            var data = new CardTemplate[totalCards];
+            var data = new byte[totalCards];
 
             var i = 0;
             foreach (var template in templates)
             {
                 for (var j = 0; j < CardMultiplier; j++)
                 {
-                    data[j] = template;
+                    data[j] = template.CardTemplateId;
                 }
                 i++;
             }

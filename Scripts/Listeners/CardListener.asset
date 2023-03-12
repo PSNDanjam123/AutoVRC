@@ -443,7 +443,7 @@ MonoBehaviour:
       Data: 28|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: CardTemplate, Assembly-CSharp
+      Data: AutoVRC.Templates.CardTemplate, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
