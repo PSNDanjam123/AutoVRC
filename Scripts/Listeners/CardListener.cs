@@ -9,6 +9,7 @@ using AutoVRC.Framework;
 using AutoVRC.Models;
 using AutoVRC.Controllers;
 using AutoVRC.Tools;
+using AutoVRC.Templates;
 
 namespace AutoVRC.Listeners
 {

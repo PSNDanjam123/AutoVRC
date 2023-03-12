@@ -4,20 +4,23 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
-public class CardTemplate : UdonSharpBehaviour
+namespace AutoVRC.Templates
 {
-    public byte CardTemplateId = 0;
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+    public class CardTemplate : UdonSharpBehaviour
+    {
+        public byte CardTemplateId = 0;
 
-    public string Title = "No Name";
+        public string Title = "No Name";
 
-    public Texture Art;
+        public Texture Art;
 
-    [Header("Stats")]
-    [Range(1, 6)]
-    public byte Rank = 1;
-    [Range(1, 255)]
-    public byte Damage = 1;
-    [Range(1, 255)]
-    public byte Health = 1;
+        [Header("Stats")]
+        [Range(1, 6)]
+        public byte Rank = 1;
+        [Range(1, 255)]
+        public byte Damage = 1;
+        [Range(1, 255)]
+        public byte Health = 1;
+    }
 }

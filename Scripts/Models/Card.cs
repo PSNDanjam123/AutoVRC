@@ -5,6 +5,7 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 using AutoVRC.Framework;
+using AutoVRC.Templates;
 
 namespace AutoVRC.Models
 {
