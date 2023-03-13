@@ -19,7 +19,7 @@ namespace AutoVRC.Controllers
                 return;
             }
             Player.SetOwner();
-            Player.WaitingOnShopRefresh = true;
+            Player.WaitingOnGameMaster = true;
             Player.Sync();
         }
         public static void PlayCard(Card Card, VRCPlayerApi vRCPlayerApi)

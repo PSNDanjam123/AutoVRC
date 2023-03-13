@@ -25,7 +25,7 @@ namespace AutoVRC.Models
         [UdonSynced, Range(0, 99)]
         public byte Coins = 3;
         [UdonSynced]
-        public bool WaitingOnShopRefresh = false;
+        public bool WaitingOnGameMaster = false;
 
         [Header("Models")]
         public GameMaster GameMaster;

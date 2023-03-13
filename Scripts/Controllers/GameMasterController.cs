@@ -24,7 +24,7 @@ namespace AutoVRC.Controllers
         {
             foreach (var player in GameMaster.Players)
             {
-                if (!player.WaitingOnShopRefresh)
+                if (!player.WaitingOnGameMaster)
                 {
                     continue;
                 }
@@ -34,6 +34,7 @@ namespace AutoVRC.Controllers
 
         private static void handleShopRequest(Shop Shop, Player Player)
         {
+            Player.SetOwner();
             Player.RemoveCardsFromShop();
             var refreshAmount = 3;
             for (var i = 0; i < refreshAmount; i++)
@@ -52,7 +53,7 @@ namespace AutoVRC.Controllers
                 card.AddToShop();
                 card.Sync();
             }
-            Player.WaitingOnShopRefresh = false;
+            Player.WaitingOnGameMaster = false;
             Player.Sync();
         }
     }
