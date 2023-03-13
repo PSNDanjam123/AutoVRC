@@ -17,6 +17,7 @@ namespace AutoVRC.Listeners.Menu.Construction
         public override void OnBootstrap()
         {
             Subscribe(Player);
+            Subscribe(Player.GameMaster);
         }
 
         public override void Interact()
@@ -26,7 +27,7 @@ namespace AutoVRC.Listeners.Menu.Construction
 
         public override void OnModelSync()
         {
-            gameObject.SetActive(!Player.WaitingOnShopRefresh);
+            gameObject.SetActive(Player.InGame && Player.GameMaster.GameInProgress && !Player.WaitingOnShopRefresh);
         }
 
     }
