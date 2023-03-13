@@ -115,18 +115,25 @@ namespace AutoVRC.Listeners
             }
             var trans = getCardGroupTransform();
             var count = cardGroup.GetCount();
-            var width = Mesh.GetComponentInChildren<MeshRenderer>().bounds.size.x;
-            var margin = width * 0.3f;
-            var length = width * count;
+            var width = 0.065f;
+            var margin = width * 0.25f;
+            var length = (width * count) + (margin * count);
+            if (count > 0)
+            {
+                length -= margin;
+            }
             var index = cardGroup.GetPosition(Card.CardId);
             var position = trans.position;
-            position.x -= length / 2;
-            position.x += width * index;
+            var right = trans.right;
+            float offset = 0;
+
+            offset -= (length / 2) - (width / 2);
+            offset += width * index;
             if (index > 0)
             {
-                position.x += margin * index;
+                offset += margin * index;
             }
-            targetPosition = position;
+            targetPosition = position + (right * offset);
         }
 
         private Transform getCardGroupTransform()
