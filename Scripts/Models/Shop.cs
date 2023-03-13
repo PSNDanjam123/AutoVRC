@@ -31,11 +31,17 @@ namespace AutoVRC.Models
             var x = Random.Range(0, CardStock.Length - 1);
             var data = new byte[CardStock.Length - 1];
             byte plucked = 0;
+            bool hasPlucked = false;
             for (var i = 0; i < CardStock.Length - 1; i++)
             {
-                if (i == x)
+                if (i == x && !hasPlucked)
                 {
                     plucked = CardStock[i];
+                    hasPlucked = true;
+                    if (i != 0)
+                    {
+                        i--;
+                    }
                     continue;
                 }
                 data[i] = CardStock[i];
@@ -57,7 +63,7 @@ namespace AutoVRC.Models
             {
                 for (var j = 0; j < CardMultiplier; j++)
                 {
-                    data[j] = template.CardTemplateId;
+                    data[i + j] = template.CardTemplateId;
                 }
                 i++;
             }
