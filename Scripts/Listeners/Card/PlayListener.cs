@@ -30,7 +30,7 @@ namespace AutoVRC.Listeners.Card
 
         public override void OnModelSync()
         {
-            gameObject.SetActive(Card.InHand() && Card.Field.GetCount() < 10);
+            gameObject.SetActive(Card.InHand() && Card.Field.GetCount() < Card.Field.MaxSize);
         }
 
     }
