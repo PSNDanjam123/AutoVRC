@@ -53,7 +53,7 @@ namespace AutoVRC.Models
         public void Restock()
         {
             var templates = CardTemplateManager.CardTemplates;
-            var totalTemplates = templates.Length;
+            var totalTemplates = templates.Length - 1;  // Remove hidden
             var totalCards = CardMultiplier * totalTemplates;
 
             var data = new byte[totalCards];
@@ -61,11 +61,15 @@ namespace AutoVRC.Models
             var i = 0;
             foreach (var template in templates)
             {
+                if (template.CardTemplateId == 0)
+                {
+                    continue;
+                }
                 for (var j = 0; j < CardMultiplier; j++)
                 {
-                    data[i + j] = template.CardTemplateId;
+                    data[i] = template.CardTemplateId;
+                    i++;
                 }
-                i++;
             }
             CardStock = data;
         }

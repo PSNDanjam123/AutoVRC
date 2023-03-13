@@ -148,7 +148,6 @@ namespace AutoVRC.Models
                 {
                     card.Shop.SetOwner();
                     card.Shop.Remove(card.CardId);
-                    card.Shop.Sync();
                 }
             }
         }

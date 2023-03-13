@@ -49,6 +49,7 @@ namespace AutoVRC.Controllers
                 {
                     break;
                 }
+                card.SetOwner();
                 card.LoadTemplate(template);
                 card.AddToShop();
                 card.Sync();
