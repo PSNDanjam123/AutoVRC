@@ -69,7 +69,7 @@ namespace AutoVRC.Models
 
         public void AddToHand()
         {
-            if (Hand.GetCount() > 9)
+            if (Hand.GetCount() == Hand.MaxSize)
             {
                 return;
             }
@@ -86,7 +86,7 @@ namespace AutoVRC.Models
         }
         public void AddToField()
         {
-            if (Field.GetCount() > 9)
+            if (Field.GetCount() == Field.MaxSize)
             {
                 return;
             }
@@ -103,7 +103,7 @@ namespace AutoVRC.Models
         }
         public void AddToShop()
         {
-            if (Shop.GetCount() > 9)
+            if (Shop.GetCount() == Shop.MaxSize)
             {
                 return;
             }

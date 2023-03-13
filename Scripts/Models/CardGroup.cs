@@ -15,7 +15,7 @@ namespace AutoVRC.Models
         [UdonSynced]
         public byte[] CardIds = { };
 
-        public byte maxSize = 255;
+        public byte MaxSize = 10;
 
         [Header("Models")]
         public Player Player;
@@ -23,7 +23,7 @@ namespace AutoVRC.Models
         public void Add(byte cardId)
         {
             var len = CardIds.Length;
-            if (len == maxSize)
+            if (len == MaxSize)
             {
                 return;
             }
