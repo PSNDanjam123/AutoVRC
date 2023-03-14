@@ -28,25 +28,23 @@ namespace AutoVRC.Models
             {
                 return null;
             }
-            var x = Random.Range(0, CardStock.Length - 1);
             var data = new byte[CardStock.Length - 1];
+            var x = Random.Range(0, CardStock.Length);
             byte plucked = 0;
             bool hasPlucked = false;
-            for (var i = 0; i < CardStock.Length - 1; i++)
+            for (var i = 0; i < CardStock.Length; i++)
             {
                 if (i == x && !hasPlucked)
                 {
                     plucked = CardStock[i];
                     hasPlucked = true;
-                    if (i != 0)
-                    {
-                        i--;
-                    }
                     continue;
                 }
-                data[i] = CardStock[i];
+                var offset = hasPlucked ? 1 : 0;
+                data[i - offset] = CardStock[i];
             }
             CardStock = data;
+            Log("PluckRandom", "plucked card template id: " + plucked);
             return CardTemplateManager.GetTemplate(plucked);
         }
 
@@ -59,14 +57,14 @@ namespace AutoVRC.Models
             var data = new byte[totalCards];
 
             var i = 0;
-            foreach (var template in templates)
+            for (var j = 0; j < CardMultiplier; j++)
             {
-                if (template.CardTemplateId == 0)
+                foreach (var template in templates)
                 {
-                    continue;
-                }
-                for (var j = 0; j < CardMultiplier; j++)
-                {
+                    if (template.CardTemplateId == 0)
+                    {
+                        continue;
+                    }
                     data[i] = template.CardTemplateId;
                     i++;
                 }
