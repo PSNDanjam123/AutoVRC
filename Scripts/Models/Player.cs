@@ -159,7 +159,7 @@ namespace AutoVRC.Models
         {
             foreach (var card in Cards)
             {
-                if (!card.InField() && !card.InShop() && !card.InHand())
+                if (!card.InCardGroup())
                 {
                     return card;
                 }

@@ -73,7 +73,7 @@ namespace AutoVRC.Models
             {
                 return;
             }
-            SetOwner();
+            Hand.SetOwner();
             var prev = GetCardGroup();
             if (prev != null)
             {
@@ -90,7 +90,7 @@ namespace AutoVRC.Models
             {
                 return;
             }
-            SetOwner();
+            Field.SetOwner();
             var prev = GetCardGroup();
             if (prev != null)
             {

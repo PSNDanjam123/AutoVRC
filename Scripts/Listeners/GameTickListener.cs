@@ -28,7 +28,8 @@ namespace AutoVRC.Listeners
         void FixedUpdate()
         {
             if (!GameMaster.GameInProgress
-                || !GameMaster.IsOwner())
+                || !GameMaster.IsOwner()
+                || HandlingTick)
             {
                 return; // Only the owner of GameMaster can handle game ticks, game ticks only run while game is in progress
             }

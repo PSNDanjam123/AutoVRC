@@ -34,6 +34,8 @@ namespace AutoVRC.Listeners
 
         private Vector3 targetPosition = Vector3.zero;
 
+        private float time = 0;
+
         void Start()
         {
             updateDisplay();
