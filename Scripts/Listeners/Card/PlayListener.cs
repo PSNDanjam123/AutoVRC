@@ -17,6 +17,7 @@ namespace AutoVRC.Listeners.Card
         public override void OnBootstrap()
         {
             Subscribe(Card);
+            Subscribe(Card.Player);
             foreach (var group in Card.Player.CardGroups)
             {
                 Subscribe(group);
