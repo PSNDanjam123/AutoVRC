@@ -139,22 +139,6 @@ namespace AutoVRC.Models
             }
             return true;
         }
-
-        public void RemoveCardsFromShop()
-        {
-            foreach (var card in Cards)
-            {
-                if (card.InShop())
-                {
-                    card.SetOwner();
-                    card.Shop.SetOwner();
-                    card.Shop.Remove(card.CardId);
-                    card.Shop.Sync();
-                    card.Sync();
-                }
-            }
-        }
-
         public Card GetCardWithoutGroup()
         {
             foreach (var card in Cards)

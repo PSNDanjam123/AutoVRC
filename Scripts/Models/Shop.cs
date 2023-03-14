@@ -22,6 +22,18 @@ namespace AutoVRC.Models
 
         public byte CardMultiplier = 12;
 
+        public void AddCard(byte cardTemplateId)
+        {
+            var len = CardStock.Length + 1;
+            var data = new byte[len];
+            for (var i = 0; i < len - 1; i++)
+            {
+                data[i] = CardStock[i];
+            }
+            data[CardStock.Length] = cardTemplateId;
+            CardStock = data;
+        }
+
         public CardTemplate PluckRandom()
         {
             if (CardStock.Length == 0)

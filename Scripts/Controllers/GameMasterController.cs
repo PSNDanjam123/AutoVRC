@@ -35,7 +35,21 @@ namespace AutoVRC.Controllers
         private static void handleShopRequest(Shop Shop, Player Player)
         {
             Player.SetOwner();
-            Player.RemoveCardsFromShop();
+
+            // Remove cards from shop
+            foreach (var card in Player.Cards)
+            {
+                if (card.InShop())
+                {
+                    card.SetOwner();
+                    card.Shop.SetOwner();
+                    card.Shop.Remove(card.CardId);
+                    Shop.AddCard(card.CardTemplateId);
+                    card.Shop.Sync();
+                    card.Sync();
+                }
+            }
+
             var refreshAmount = 3;
             for (var i = 0; i < refreshAmount; i++)
             {
