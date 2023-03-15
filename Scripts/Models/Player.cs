@@ -115,8 +115,7 @@ namespace AutoVRC.Models
         {
             if (GameMaster.GameHosted
                 || GameMaster.GameInProgress
-                || GameMaster.PlayersJoinedCount() > 0
-                || VRCPlayerId == null)
+                || GameMaster.PlayersJoinedCount() > 0)
             {
                 return false;
             }
