@@ -51,7 +51,7 @@ namespace AutoVRC.Models
         {
             Health = 30;
             Rank = 1;
-            Coins = 9 + 1;
+            Coins = 30 + 1;
         }
 
         public void JoinGame(VRCPlayerApi vRCPlayerApi)
