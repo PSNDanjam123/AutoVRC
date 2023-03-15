@@ -14,7 +14,7 @@ namespace AutoVRC.Controllers
     {
         public static void RefreshShop(Player Player, VRCPlayerApi vRCPlayerApi)
         {
-            if (Player.VRCPlayerId != vRCPlayerApi.playerId)
+            if (Player.VRCPlayerId != vRCPlayerApi.displayName)
             {
                 return;
             }
@@ -24,7 +24,7 @@ namespace AutoVRC.Controllers
         }
         public static void PlayCard(Card Card, VRCPlayerApi vRCPlayerApi)
         {
-            if (Card.Player.VRCPlayerId != vRCPlayerApi.playerId)
+            if (Card.Player.VRCPlayerId != vRCPlayerApi.displayName)
             {
                 return;
             }
@@ -32,7 +32,7 @@ namespace AutoVRC.Controllers
         }
         public static void BuyCard(Card Card, VRCPlayerApi vRCPlayerApi)
         {
-            if (Card.Player.VRCPlayerId != vRCPlayerApi.playerId)
+            if (Card.Player.VRCPlayerId != vRCPlayerApi.displayName)
             {
                 return;
             }
@@ -40,7 +40,7 @@ namespace AutoVRC.Controllers
         }
         public static void SellCard(Card Card, VRCPlayerApi vRCPlayerApi)
         {
-            if (Card.Player.VRCPlayerId != vRCPlayerApi.playerId)
+            if (Card.Player.VRCPlayerId != vRCPlayerApi.displayName)
             {
                 return;
             }
@@ -48,7 +48,7 @@ namespace AutoVRC.Controllers
         }
         public static void MoveLeft(Card Card, VRCPlayerApi vRCPlayerApi)
         {
-            if (Card.Player.VRCPlayerId != vRCPlayerApi.playerId)
+            if (Card.Player.VRCPlayerId != vRCPlayerApi.displayName)
             {
                 return;
             }

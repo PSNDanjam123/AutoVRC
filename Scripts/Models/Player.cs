@@ -10,10 +10,8 @@ namespace AutoVRC.Models
 {
     public class Player : Model
     {
-        [UdonSynced]
-        public int VRCPlayerId;
-        [UdonSynced]
-        public string DisplayName;
+        [UdonSynced, HideInInspector]
+        public string VRCPlayerId = null;
         [UdonSynced]
         public bool VRCPlayerAttached = false;
         [UdonSynced]
@@ -44,8 +42,7 @@ namespace AutoVRC.Models
         public void JoinGame(VRCPlayerApi vRCPlayerApi)
         {
             SetOwner();
-            VRCPlayerId = vRCPlayerApi.playerId;
-            DisplayName = vRCPlayerApi.displayName;
+            VRCPlayerId = vRCPlayerApi.displayName;
             VRCPlayerAttached = true;
             InGame = true;
             Sync();
@@ -53,7 +50,7 @@ namespace AutoVRC.Models
             if (!GameMaster.GameHosted)
             {
                 GameMaster.SetOwner();
-                GameMaster.VRCPlayerId = vRCPlayerApi.playerId;
+                GameMaster.VRCPlayerId = vRCPlayerApi.displayName;
                 GameMaster.GameHosted = true;
                 GameMaster.Sync();
             }
@@ -63,8 +60,7 @@ namespace AutoVRC.Models
         public void LeaveGame(VRCPlayerApi playerApi)
         {
             SetOwner();
-            VRCPlayerId = 0;
-            DisplayName = "No Player";
+            VRCPlayerId = null;
             VRCPlayerAttached = false;
             InGame = false;
             Sync();
@@ -72,13 +68,13 @@ namespace AutoVRC.Models
             if (GameMaster.PlayersJoinedCount() == 0)
             {
                 GameMaster.SetOwner();
-                GameMaster.VRCPlayerId = 0;
+                GameMaster.VRCPlayerId = null;
                 GameMaster.GameHosted = false;
                 GameMaster.Sync();
             }
-            else if (GameMaster.VRCPlayerId == playerApi.playerId && GameMaster.IsOwner())
+            else if (GameMaster.VRCPlayerId == playerApi.displayName && GameMaster.IsOwner())
             {
-                GameMaster.VRCPlayerId = Networking.LocalPlayer.playerId;
+                GameMaster.VRCPlayerId = Networking.LocalPlayer.displayName;
                 GameMaster.Sync();
             }
 
@@ -95,7 +91,7 @@ namespace AutoVRC.Models
         }
         public bool CanLeaveGame(VRCPlayerApi vRCPlayerApi)
         {
-            if (VRCPlayerId != vRCPlayerApi.playerId
+            if (VRCPlayerId != vRCPlayerApi.displayName
                 || !GameMaster.GameHosted
                 || GameMaster.GameInProgress)
             {
@@ -107,7 +103,7 @@ namespace AutoVRC.Models
         public bool CanLeaveOnDisconnect(VRCPlayerApi playerApi)
         {
             if (!IsOwner()
-                || VRCPlayerId != playerApi.playerId
+                || VRCPlayerId != playerApi.displayName
                 || !GameMaster.GameHosted
                 || GameMaster.GameInProgress)
             {
@@ -120,7 +116,7 @@ namespace AutoVRC.Models
             if (GameMaster.GameHosted
                 || GameMaster.GameInProgress
                 || GameMaster.PlayersJoinedCount() > 0
-                || VRCPlayerId != 0)
+                || VRCPlayerId == null)
             {
                 return false;
             }
@@ -129,8 +125,8 @@ namespace AutoVRC.Models
 
         public bool CanStartGame(VRCPlayerApi playerApi)
         {
-            if (VRCPlayerId != playerApi.playerId
-                || GameMaster.VRCPlayerId != playerApi.playerId
+            if (VRCPlayerId != playerApi.displayName
+                || GameMaster.VRCPlayerId != playerApi.displayName
                 || GameMaster.PlayersJoinedCount() == 0
                 || !GameMaster.GameHosted
                 || GameMaster.GameInProgress)

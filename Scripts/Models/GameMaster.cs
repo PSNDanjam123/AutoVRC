@@ -12,7 +12,7 @@ namespace AutoVRC.Models
     public class GameMaster : Model
     {
         [UdonSynced, Tooltip("Game Host")]
-        public int VRCPlayerId;
+        public string VRCPlayerId = null;
         [UdonSynced, Tooltip("Has a game been hosted?")]
         public bool GameHosted = false;
         [UdonSynced, Tooltip("Is the game in progress")]

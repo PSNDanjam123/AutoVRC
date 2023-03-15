@@ -23,7 +23,11 @@ namespace AutoVRC.Listeners.Player
 
         public override void OnModelSync()
         {
-            var setName = Player.VRCPlayerId + " " + Player.DisplayName;
+            var setName = "No Player";
+            if (Player.VRCPlayerId != null)
+            {
+                setName = Player.VRCPlayerId;
+            }
             if (DisplayName != setName)
             {
                 gameObject.GetComponent<Text>().text = DisplayName = setName;
