@@ -17,11 +17,11 @@ namespace AutoVRC.Models
         [UdonSynced]
         public bool InGame = false;
         [UdonSynced, Range(0, 99)]
-        public byte Health = 30;
+        public byte Health = 0;
         [UdonSynced, Range(1, 7)]
         public byte Rank = 1;
         [UdonSynced, Range(0, 99)]
-        public byte Coins = 3;
+        public byte Coins = 0;
         [UdonSynced]
         public bool WaitingOnGameMaster = false;
 
@@ -35,10 +35,25 @@ namespace AutoVRC.Models
             GameMaster.Shop.Restock();
             GameMaster.Shop.Sync();
 
+            foreach (var Player in GameMaster.Players)
+            {
+                Player.SetOwner();
+                Player.ResetStats();
+                Player.Sync();
+            }
+
             GameMaster.SetOwner();
             GameMaster.GameInProgress = true;
             GameMaster.Sync();
         }
+
+        public void ResetStats()
+        {
+            Health = 30;
+            Rank = 1;
+            Coins = 9 + 1;
+        }
+
         public void JoinGame(VRCPlayerApi vRCPlayerApi)
         {
             SetOwner();

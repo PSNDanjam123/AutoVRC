@@ -31,7 +31,7 @@ namespace AutoVRC.Listeners.Card
 
         public override void OnModelSync()
         {
-            gameObject.SetActive(!Card.Player.WaitingOnGameMaster && Card.InHand() && Card.Field.GetCount() < Card.Field.MaxSize);
+            gameObject.SetActive(Card.Player.Health > 0 && !Card.Player.WaitingOnGameMaster && Card.InHand() && Card.Field.GetCount() < Card.Field.MaxSize);
         }
 
     }

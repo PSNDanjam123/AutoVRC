@@ -27,7 +27,7 @@ namespace AutoVRC.Listeners.Menu.Construction
 
         public override void OnModelSync()
         {
-            gameObject.SetActive(Player.InGame && Player.GameMaster.GameInProgress && !Player.WaitingOnGameMaster);
+            gameObject.SetActive(Player.Coins > 0 && Player.InGame && Player.GameMaster.GameInProgress && !Player.WaitingOnGameMaster);
         }
 
     }
