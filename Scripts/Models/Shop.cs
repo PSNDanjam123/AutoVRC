@@ -104,6 +104,7 @@ namespace AutoVRC.Models
                 return new byte[0];
             }
             var multipler = 24 - (3 * rank);
+            multipler *= 15;    // test value to simulate lots of cards
             var total = templates.Length * multipler;
             byte[] data = new byte[total];
             for (var i = 0; i < total; i++)
