@@ -58,7 +58,7 @@ namespace AutoVRC.Controllers
                 {
                     break; // player has no valid cards
                 }
-                var template = Shop.PluckRandom();
+                var template = Shop.PluckRandom(Player.Rank);
                 if (template == null)
                 {
                     break;
