@@ -24,6 +24,21 @@ namespace AutoVRC.Controllers
             Player.WaitingOnGameMaster = true;
             Player.Sync();
         }
+        public static void UpgradeRank(Player Player, VRCPlayerApi vRCPlayerApi)
+        {
+            if (Player.VRCPlayerId != vRCPlayerApi.displayName)
+            {
+                return;
+            }
+            if (Player.Rank == 5 || Player.Coins == 0)
+            {
+                return;
+            }
+            Player.SetOwner();
+            Player.Rank++;
+            Player.Coins--;
+            Player.Sync();
+        }
         public static void PlayCard(Card Card, VRCPlayerApi vRCPlayerApi)
         {
             if (Card.Player.VRCPlayerId != vRCPlayerApi.displayName)

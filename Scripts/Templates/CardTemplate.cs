@@ -25,18 +25,18 @@ namespace AutoVRC.Templates
 
         public Color GetRankColor()
         {
-            switch ((uint)Rank)
+            switch (Rank)
             {
                 case 1: // Visitor
-                    return new Color(192 / 255, 192 / 255, 192 / 255, 0.6f);
+                    return new Color32(192, 192, 192, 200);
                 case 2: // New
-                    return new Color(25 / 255, 113 / 255, 192 / 238, 0.6f);
+                    return new Color32(25, 113, 192, 200);
                 case 3: // User
-                    return new Color(42 / 255, 207 / 255, 92 / 238, 0.6f);
+                    return new Color32(42, 207, 92, 200);
                 case 4: // Known
-                    return new Color(255 / 255, 127 / 255, 68 / 238, 0.6f);
+                    return new Color32(255, 127, 68, 200);
                 case 5: // Trusted
-                    return new Color(132 / 255, 68 / 255, 236 / 238, 0.6f);
+                    return new Color32(132, 68, 236, 200);
             }
 
             return Color.red;
