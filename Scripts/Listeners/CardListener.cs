@@ -22,7 +22,7 @@ namespace AutoVRC.Listeners
 
         public byte CardTemplateId = 0;
         public CardTemplate CardTemplate = null;
-        public Text Rank;
+        public Image Rank;
         public Text Title;
         public Text Damage;
 
@@ -100,8 +100,9 @@ namespace AutoVRC.Listeners
 
         private void updateDisplay()
         {
+            CardTemplateId = Card.CardTemplateId;
             CardTemplate = CardTemplateManager.GetTemplate(Card.CardTemplateId);
-            Rank.text = CardTemplate.Rank.ToString();
+            Rank.color = CardTemplate.GetRankColor();
             Title.text = CardTemplate.Title.ToString();
             Mesh.transform.Find("Front").GetComponent<MeshRenderer>().material.SetTexture("_MainTex", CardTemplate.Art);
         }
