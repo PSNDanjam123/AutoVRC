@@ -29,6 +29,9 @@ namespace AutoVRC.Models
         public GameMaster GameMaster;
         public CardGroup[] CardGroups;
         public Card[] Cards;
+
+        public float TotalGameTime = 0;
+
         public void StartGame()
         {
             GameMaster.Shop.SetOwner();
@@ -44,8 +47,10 @@ namespace AutoVRC.Models
 
             GameMaster.SetOwner();
             GameMaster.GameInProgress = true;
+            GameMaster.StartEpoch = GameMaster.GetMillisecondEpoch();
             GameMaster.Sync();
         }
+
 
         public void ResetStats()
         {
