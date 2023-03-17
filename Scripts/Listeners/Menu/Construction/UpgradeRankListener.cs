@@ -18,6 +18,7 @@ namespace AutoVRC.Listeners.Menu.Construction
 
         public Image Background;
         public Text Text;
+        public Text Cost;
 
         public override void OnBootstrap()
         {
@@ -34,6 +35,7 @@ namespace AutoVRC.Listeners.Menu.Construction
         {
             Background.color = getRankColor(Player.Rank);
             Text.text = getRankText(Player.Rank);
+            Cost.text = Player.RankCost.ToString();
             gameObject.SetActive(Player.InGame && Player.GameMaster.GameInProgress && !Player.WaitingOnGameMaster);
         }
 

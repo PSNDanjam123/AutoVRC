@@ -30,13 +30,14 @@ namespace AutoVRC.Controllers
             {
                 return;
             }
-            if (Player.Rank == 5 || Player.Coins == 0)
+            if (Player.Rank == 5 || Player.Coins < Player.RankCost)
             {
                 return;
             }
             Player.SetOwner();
             Player.Rank++;
-            Player.Coins--;
+            Player.Coins -= Player.RankCost;
+            Player.RankCost = (byte)(3 + Player.Rank);
             Player.Sync();
         }
         public static void PlayCard(Card Card, VRCPlayerApi vRCPlayerApi)

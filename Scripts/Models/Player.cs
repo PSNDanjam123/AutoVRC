@@ -20,6 +20,12 @@ namespace AutoVRC.Models
         public byte Health = 0;
         [UdonSynced, Range(1, 7)]
         public byte Rank = 1;
+        [UdonSynced]
+        public byte RankCost = 4;
+        [UdonSynced]
+        public int Round = 0;
+        [UdonSynced]
+        public bool InBattle = false;
         [UdonSynced, Range(0, 99)]
         public byte Coins = 0;
         [UdonSynced]
@@ -30,7 +36,50 @@ namespace AutoVRC.Models
         public CardGroup[] CardGroups;
         public Card[] Cards;
 
-        public float TotalGameTime = 0;
+
+        private float _fixedUpdateTimeSinceLastTick = 0;
+
+        void FixedUpdate()
+        {
+            _fixedUpdateTimeSinceLastTick += Time.deltaTime;
+            if (Round == 0 && _fixedUpdateTimeSinceLastTick < 2)
+            {
+                return; // join buffer
+            }
+            if (_fixedUpdateTimeSinceLastTick < 0.5)
+            {
+                return;
+            }
+            _fixedUpdateTimeSinceLastTick = 0;
+
+            // handle new round
+            _newRoundHandler();
+        }
+
+        private void _newRoundHandler()
+        {
+            if (Round == GameMaster.Round || !IsOwner())
+            {
+                return;
+            }
+            Round = GameMaster.Round;
+            InBattle = true;
+            Coins = 3 + 1;
+            if (Round > 1)
+            {
+                Coins += (byte)Round;
+                Coins--;
+            }
+            if (Coins > 10)
+            {
+                Coins = 10;
+            }
+            if (RankCost > 0)
+            {
+                RankCost--;
+            }
+            Sync();
+        }
 
         public void StartGame()
         {
@@ -56,7 +105,7 @@ namespace AutoVRC.Models
         {
             Health = 30;
             Rank = 1;
-            Coins = 180 + 1; // original 3, DEMO LOADS!
+            Coins = 3 + 1;
         }
 
         public void JoinGame(VRCPlayerApi vRCPlayerApi)
