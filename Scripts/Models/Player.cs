@@ -10,6 +10,7 @@ namespace AutoVRC.Models
 {
     public class Player : Model
     {
+        public int PlayerId = 0;
         [UdonSynced, HideInInspector]
         public string VRCPlayerId = null;
         [UdonSynced]
@@ -26,6 +27,8 @@ namespace AutoVRC.Models
         public int Round = 0;
         [UdonSynced]
         public bool InBattle = false;
+        [UdonSynced]
+        public int NextOpponentId = -1;
         [UdonSynced, Range(0, 99)]
         public byte Coins = 0;
         [UdonSynced]
@@ -77,7 +80,43 @@ namespace AutoVRC.Models
             {
                 RankCost--;
             }
+            determineNextOpponent();
             Sync();
+        }
+
+        private void determineNextOpponent()
+        {
+            var seed = GameMaster.GameSeed;
+            seed += Round;
+            // get alive players count
+            var playersAliveCount = 0;
+            foreach (var player in GameMaster.Players)
+            {
+                if (player.Health == 0 || !player.InGame)
+                {
+                    continue;
+                }
+                playersAliveCount++;
+            }
+            // get alive players
+            var ownIndex = 0;
+            var players = new Player[playersAliveCount];
+            for (var i = 0; i < playersAliveCount; i++)
+            {
+                var player = GameMaster.Players[i];
+                if (player.Health == 0 || !player.InGame)
+                {
+                    continue;
+                }
+                players[i] = player;
+                if (player.PlayerId == PlayerId)
+                {
+                    ownIndex = i;
+                }
+            }
+            Random.InitState(seed);
+            var offset = (ownIndex + Random.Range(1, playersAliveCount)) % (playersAliveCount - 1);
+            NextOpponentId = players[offset].PlayerId;
         }
 
         public void StartGame()

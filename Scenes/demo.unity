@@ -3397,6 +3397,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
+      propertyPath: PlayerId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
+        type: 3}
       propertyPath: GameMaster
       value: 
       objectReference: {fileID: 186434524}
@@ -9982,6 +9987,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
+      propertyPath: PlayerId
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
+        type: 3}
       propertyPath: GameMaster
       value: 
       objectReference: {fileID: 186434524}
@@ -14026,6 +14036,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4419981257954106281, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
+    - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
+        type: 3}
+      propertyPath: PlayerId
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
       propertyPath: GameMaster
@@ -25253,6 +25268,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
+      propertyPath: PlayerId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
+        type: 3}
       propertyPath: GameMaster
       value: 
       objectReference: {fileID: 186434524}
@@ -32414,6 +32434,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
+      propertyPath: PlayerId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
+        type: 3}
       propertyPath: GameMaster
       value: 
       objectReference: {fileID: 186434524}
@@ -35197,6 +35222,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4419981257954106281, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
+    - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
+        type: 3}
+      propertyPath: PlayerId
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
       propertyPath: GameMaster
@@ -49033,6 +49063,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
+      propertyPath: PlayerId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
+        type: 3}
       propertyPath: GameMaster
       value: 
       objectReference: {fileID: 186434524}
@@ -51270,6 +51305,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4419981257954106281, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
+    - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
+        type: 3}
+      propertyPath: PlayerId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4419981258151538332, guid: 11e429abb79fb2548999f7b26be7c806,
         type: 3}
       propertyPath: GameMaster
