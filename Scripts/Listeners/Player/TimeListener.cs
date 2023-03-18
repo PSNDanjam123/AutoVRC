@@ -32,11 +32,6 @@ namespace AutoVRC.Listeners.Player
             updateText(Player.GameMaster.RoundSeconds, Player.GameMaster.TotalGameTime);
         }
 
-        public override void OnBootstrap()
-        {
-            gameObject.SetActive((Player.InGame && Player.GameMaster.GameInProgress));
-        }
-
         private void updateText(int roundTime, float totalTime)
         {
             string totalTimeText = string.Format("{0:N1}", totalTime);
