@@ -113,7 +113,7 @@ namespace AutoVRC.Models
             var count = 0;
             foreach (var card in Cards)
             {
-                if (card.CardTemplateId == Card.CardTemplateId && (card.InHand() || card.InField()))
+                if (card.CardTemplateId == Card.CardTemplateId && !card.Triple && (card.InHand() || card.InField()))
                 {
                     count++;
                 }
@@ -134,7 +134,7 @@ namespace AutoVRC.Models
                 {
                     break;
                 }
-                if (card.CardId == Card.CardId)
+                if (card.CardId == Card.CardId || card.Triple)
                 {
                     continue;
                 }

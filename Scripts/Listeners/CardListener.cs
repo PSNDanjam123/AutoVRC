@@ -90,21 +90,34 @@ namespace AutoVRC.Listeners
 
         private void updateValues()
         {
-            if (CardTemplateId != Card.CardTemplateId)
-            {
-                updateDisplay();
-            }
+            updateDisplay();
             Damage.text = Card.Damage.ToString();
             Health.text = Card.Health.ToString();
         }
 
         private void updateDisplay()
         {
-            CardTemplateId = Card.CardTemplateId;
-            CardTemplate = CardTemplateManager.GetTemplate(Card.CardTemplateId);
-            Rank.color = CardTemplate.GetRankColor();
-            Title.text = CardTemplate.Title.ToString();
-            Mesh.transform.Find("Front").GetComponent<MeshRenderer>().material.SetTexture("_MainTex", CardTemplate.Art);
+            if (CardTemplateId != Card.CardTemplateId)
+            {
+                CardTemplateId = Card.CardTemplateId;
+                CardTemplate = CardTemplateManager.GetTemplate(Card.CardTemplateId);
+                Title.text = CardTemplate.Title.ToString();
+                Mesh.transform.Find("Front").GetComponent<MeshRenderer>().material.SetTexture("_MainTex", CardTemplate.Art);
+            }
+            if (CardTemplate == null)
+            {
+                return;
+            }
+            if (!Card.Triple)
+            {
+                Rank.color = CardTemplate.GetRankColor();
+                Title.color = Color.white;
+            }
+            else
+            {
+                Rank.color = new Color(255, 240, 0, 255);
+                Title.color = Color.black;
+            }
         }
 
         private void updatePosition()
