@@ -26,7 +26,7 @@ namespace AutoVRC.Listeners.Player
             var setName = "No Player";
             if (Player.VRCPlayerId != null)
             {
-                setName = Player.VRCPlayerId;
+                setName = "(" + Player.PlayerId.ToString() + ") " + Player.VRCPlayerId;
             }
             if (DisplayName != setName)
             {
