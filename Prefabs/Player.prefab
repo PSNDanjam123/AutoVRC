@@ -2252,9 +2252,6 @@ MonoBehaviour:
   - {fileID: 6603990810644097141}
   - {fileID: 4055788277048598756}
   - {fileID: 1458432382948156343}
-  Hand: {fileID: 4419981259015577729}
-  Field: {fileID: 4419981257264749650}
-  Shop: {fileID: 4419981258344968502}
 --- !u!114 &4419981258151538333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8012,14 +8009,14 @@ PrefabInstance:
       objectReference: {fileID: 4419981257264749650}
     - target: {fileID: 987484337118887982, guid: 87905c79f943efe49b874dcb1f5f99d4,
         type: 3}
+      propertyPath: CardId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 987484337118887982, guid: 87905c79f943efe49b874dcb1f5f99d4,
+        type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 4419981258151538332}
-    - target: {fileID: 987484337118887982, guid: 87905c79f943efe49b874dcb1f5f99d4,
-        type: 3}
-      propertyPath: CardTemplateId
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 987484337118887982, guid: 87905c79f943efe49b874dcb1f5f99d4,
         type: 3}
       propertyPath: serializationData.Prefab
