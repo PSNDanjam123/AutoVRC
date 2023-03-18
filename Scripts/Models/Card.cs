@@ -21,6 +21,8 @@ namespace AutoVRC.Models
         public byte Damage = 1;
         [UdonSynced]
         public byte Health = 1;
+        [UdonSynced]
+        public bool Triple = false;
 
         [Header("Relationships")]
         public Player Player;
@@ -125,6 +127,20 @@ namespace AutoVRC.Models
             Shop.Remove(CardId);
             Shop.Sync();
         }
+        public void RemoveFromField()
+        {
+            Field.SetOwner();
+            Field.Remove(CardId);
+            Field.Sync();
+        }
+
+        public void RemoveFromHand()
+        {
+            Hand.SetOwner();
+            Hand.Remove(CardId);
+            Hand.Sync();
+        }
+
 
         public void MoveLeft()
         {
@@ -152,6 +168,12 @@ namespace AutoVRC.Models
         public bool InShop()
         {
             return Shop.HasCard(CardId);
+        }
+
+        public void MergeStats(Card Card)
+        {
+            Damage += Card.Damage;
+            Health += Card.Health;
         }
 
     }

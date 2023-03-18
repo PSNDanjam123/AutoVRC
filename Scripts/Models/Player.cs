@@ -36,7 +36,6 @@ namespace AutoVRC.Models
         public CardGroup[] CardGroups;
         public Card[] Cards;
 
-
         private float _fixedUpdateTimeSinceLastTick = 0;
 
         void FixedUpdate()
@@ -107,6 +106,57 @@ namespace AutoVRC.Models
             Health = 30;
             Rank = 1;
             Coins = 3 + 1;
+        }
+
+        public bool CanTriple(Card Card)
+        {
+            var count = 0;
+            foreach (var card in Cards)
+            {
+                if (card.CardTemplateId == Card.CardTemplateId && (card.InHand() || card.InField()))
+                {
+                    count++;
+                }
+                if (count > 1)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public void Triple(Card Card)
+        {
+            var count = 0;
+            foreach (var card in Cards)
+            {
+                if (count > 1)
+                {
+                    break;
+                }
+                if (card.CardId == Card.CardId)
+                {
+                    continue;
+                }
+                if (card.CardTemplateId == Card.CardTemplateId && (card.InHand() || card.InField()))
+                {
+                    card.SetOwner();
+                    if (card.InHand())
+                    {
+                        card.RemoveFromHand();
+                    }
+                    else
+                    {
+                        card.RemoveFromField();
+                    }
+                    Card.MergeStats(card);
+                    card.Sync();
+                    count++;
+                }
+            }
+            Card.SetOwner();
+            Card.Triple = true;
+            Card.Sync();
         }
 
         public void JoinGame(VRCPlayerApi vRCPlayerApi)

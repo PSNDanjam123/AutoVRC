@@ -57,6 +57,10 @@ namespace AutoVRC.Controllers
             }
             Card.Player.SetOwner();
             Card.Player.Coins -= price;
+            if (Card.Player.CanTriple(Card))
+            {
+                Card.Player.Triple(Card);
+            }
             Card.AddToHand();
             Card.Player.Sync();
         }
