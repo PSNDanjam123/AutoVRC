@@ -17,6 +17,8 @@ namespace AutoVRC.Models
         public bool GameHosted = false;
         [UdonSynced, Tooltip("Is the game in progress")]
         public bool GameInProgress = false;
+        [UdonSynced]
+        public int GameSeed = 0;
 
         [UdonSynced]
         public double StartEpoch = 0; // Milliseconds

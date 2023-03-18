@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5133,6 +5133,7 @@ MonoBehaviour:
   VRCPlayerId: 
   GameHosted: 0
   GameInProgress: 0
+  GameSeed: 0
   StartEpoch: 0
   TotalGameTime: 0
   Round: 0
@@ -27406,6 +27407,7 @@ GameObject:
   - component: {fileID: 1273985595}
   - component: {fileID: 1273985597}
   - component: {fileID: 1273985596}
+  - component: {fileID: 1273985598}
   m_Layer: 0
   m_Name: VRC Scene Descriptor
   m_TagString: Untagged
@@ -27483,8 +27485,8 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
-  - {fileID: 2100000, guid: bbdd461230265e647806ba25672df93f, type: 2}
   - {fileID: 2100000, guid: 4cf1d89e6ded5c54a9c5013525f0943a, type: 2}
+  - {fileID: 2100000, guid: bbdd461230265e647806ba25672df93f, type: 2}
   - {fileID: 2100000, guid: 64bec6fb7dbd12f479a27b8894ccf3d0, type: 2}
   LightMapsNear: []
   LightMapsFar: []
@@ -30727,6 +30729,19 @@ MonoBehaviour:
     ID: 9585
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
   portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+--- !u!114 &1273985598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273985594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 1
 --- !u!1 &1274161438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1553304975725078325, guid: 11e429abb79fb2548999f7b26be7c806,

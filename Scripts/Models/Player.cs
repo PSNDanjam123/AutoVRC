@@ -95,6 +95,7 @@ namespace AutoVRC.Models
             }
 
             GameMaster.SetOwner();
+            GameMaster.GameSeed = Random.Range(0, 10000000);
             GameMaster.GameInProgress = true;
             GameMaster.StartEpoch = GameMaster.GetMillisecondEpoch();
             GameMaster.Sync();
