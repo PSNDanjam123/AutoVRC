@@ -116,7 +116,11 @@ namespace AutoVRC.Models
                 index++;
             }
             Random.InitState(seed);
-            var offset = (ownIndex + Random.Range(1, playersAliveCount)) % (playersAliveCount - 1);
+            var offset = 0;
+            if (playersAliveCount > 1)
+            {
+                offset = (ownIndex + Random.Range(1, playersAliveCount)) % (playersAliveCount - 1);
+            }
             NextOpponentId = players[offset].PlayerId;
         }
 
