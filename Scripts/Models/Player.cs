@@ -101,18 +101,19 @@ namespace AutoVRC.Models
             // get alive players
             var ownIndex = 0;
             var players = new Player[playersAliveCount];
-            for (var i = 0; i < playersAliveCount; i++)
+            var index = 0;
+            foreach (var player in GameMaster.Players)
             {
-                var player = GameMaster.Players[i];
                 if (player.Health == 0 || !player.InGame)
                 {
                     continue;
                 }
-                players[i] = player;
+                players[index] = player;
                 if (player.PlayerId == PlayerId)
                 {
-                    ownIndex = i;
+                    ownIndex = index;
                 }
+                index++;
             }
             Random.InitState(seed);
             var offset = (ownIndex + Random.Range(1, playersAliveCount)) % (playersAliveCount - 1);
