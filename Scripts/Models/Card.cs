@@ -35,6 +35,7 @@ namespace AutoVRC.Models
             CardTemplateId = template.CardTemplateId;
             Damage = template.Damage;
             Health = template.Health;
+            Triple = false;
         }
 
         public int GetCardGroupPosition()
